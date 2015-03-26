@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Система автоматизации работы отдела кадров" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index" />
+	</definition>
+
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Авторизация" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+	
+	<definition name="info" extends="common">
+		<put-attribute name="title" value="Информация" />
+		<put-attribute name="body" value="/WEB-INF/jsp/info.jsp" />
+		<put-attribute name="current" value="info" />
+	</definition>
+		
+	<definition name="employee-detail" extends="common">
+		<put-attribute name="title" value="Информация о сотруднике" />
+		<put-attribute name="body" value="/WEB-INF/jsp/employee-detail.jsp" />
+		<put-attribute name="current" value="employee-detail" />
+	</definition>
+	
+	<definition name="edit-employee" extends="common">
+		<put-attribute name="title" value="Редактирование записи о сотруднике" />
+		<put-attribute name="body" value="/WEB-INF/jsp/edit-employee.jsp" />
+		<put-attribute name="current" value="edit-employee" />
+	</definition>
+	
+	<definition name="create-employee" extends="common">
+		<put-attribute name="title" value="Создание записи о сотруднике" />
+		<put-attribute name="body" value="/WEB-INF/jsp/create-employee.jsp" />
+		<put-attribute name="current" value="create-employee" />
+	</definition>
+		
+	<definition name="divisions" extends="common">
+		<put-attribute name="title" value="Отделы компании" />
+		<put-attribute name="body" value="/WEB-INF/jsp/divisions.jsp" />
+		<put-attribute name="current" value="divisions" />
+	</definition>
+	
+	<definition name="create-division" extends="common">
+		<put-attribute name="title" value="Создание нового отдела" />
+		<put-attribute name="body" value="/WEB-INF/jsp/create-division.jsp" />
+		<put-attribute name="current" value="create-division" />
+	</definition>
+	
+	<definition name="edit-division" extends="common">
+		<put-attribute name="title" value="Редактирование отдела" />
+		<put-attribute name="body" value="/WEB-INF/jsp/edit-division.jsp" />
+		<put-attribute name="current" value="edit-division" />
+	</definition>
+	
+
+</tiles-definitions>
