@@ -1,5 +1,5 @@
 # HR-management-system
-Web-application organazing work of HR manager
+Web-application organizing work of HR manager
 
 Login information shown on page 'Information'
 
