@@ -285,6 +285,15 @@
             </executions>
         </plugin>
 
+        <plugin>
+            <groupId>com.heroku.sdk</groupId>
+            <artifactId>heroku-maven-plugin</artifactId>
+            <version>0.3.5</version>
+            <configuration>
+                <appName>hr-system</appName>
+            </configuration>
+        </plugin>
+
 	</plugins>
 </build>
 </project>
